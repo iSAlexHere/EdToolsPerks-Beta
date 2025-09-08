@@ -260,8 +260,8 @@ EdToolsPerks integrates with:
 ## 📞 Support
 
 ### Getting Help
-- **Discord**: [Your Discord Server]
-- **Issues**: [GitHub Issues](https://github.com/your-repo/issues)
+- **Discord**: Araxystv
+- **Issues**: [GitHub Issues](https://github.com/iSAlexHere/EdToolsPerks-Beta/issues)
 - **Documentation**: This file and in-game `/edtoolsperks help`
 
 ### Reporting Bugs
@@ -286,3 +286,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 **⚠️ Beta Notice**: This is a beta version. While stable for production use, some features may change in future releases. Always backup your data before updating.
 
 **Made with ❤️ for the Minecraft EdTools community**
+
