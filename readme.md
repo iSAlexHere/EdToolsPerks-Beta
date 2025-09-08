@@ -4,7 +4,7 @@
 ![Minecraft](https://img.shields.io/badge/minecraft-1.20+-green)
 ![Java](https://img.shields.io/badge/java-17+-orange)
 
-**EdToolsPerks** is a powerful Minecraft plugin that adds a gacha-style perk system to EdTools omniptools. Players can roll for random perks that provide permanent boosts to their tools, creating an engaging progression system.
+**EdToolsPerks** is a powerful Minecraft plugin that adds a gacha-style perk system to EdTools omnitools. Players can roll for random perks that provide permanent boosts to their tools, creating an engaging progression system.
 
 ## 🎯 Features
 
@@ -283,5 +283,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 **⚠️ Beta Notice**: This is a beta version. While stable for production use, some features may change in future releases. Always backup your data before updating.
 
 **Made with ❤️ for the Minecraft EdTools community**
+
 
 
