@@ -251,11 +251,8 @@ EdToolsPerks integrates with:
 - ✅ EdTools API integration
 
 ### Planned Features
-- 🔄 Web dashboard for statistics
 - 🔄 Perk trading system
-- 🔄 Achievement system
 - 🔄 Custom perk creation tools
-- 🔄 Multi-server synchronization
 
 ## 📞 Support
 
@@ -286,4 +283,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 **⚠️ Beta Notice**: This is a beta version. While stable for production use, some features may change in future releases. Always backup your data before updating.
 
 **Made with ❤️ for the Minecraft EdTools community**
+
 
