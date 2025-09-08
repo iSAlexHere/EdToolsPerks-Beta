@@ -1,0 +1,84 @@
+# EdToolsPerks Configuration File
+
+# Database settings
+database:
+  type: h2
+  file: "edtoolsperks.db"
+
+# Roll system settings
+rolls:
+  guaranteed-purple-at: 500 # After 500 rolls, guarantee a purple perk
+
+# Perk default values
+perk-defaults:
+  display-name: "" # If empty, uses perk ID
+  description: ""
+  category: "verde"
+  tool: "hoe" 
+  chance: 1.0
+  material: "ENCHANTED_BOOK"
+
+# GUI Settings
+gui:
+  main-gui:
+    title: "&8Tool Perks Menu"
+    size: 54 # 6 rows
+    
+  perks-list-gui:
+    title: "&8Available Perks"
+    size: 54 # 6 rows
+
+# Animation settings
+animation:
+  duration-ticks: 60 # 3 seconds
+  crystal-slots: [12, 13, 14, 21, 23, 30, 31, 32]
+  border-slots: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 17, 18, 26, 27, 35, 36, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53]
+  tool-slot: 22
+  crystal-materials:
+    - WHITE_STAINED_GLASS_PANE
+    - LIGHT_GRAY_STAINED_GLASS_PANE
+    - GRAY_STAINED_GLASS_PANE
+    - CYAN_STAINED_GLASS_PANE
+    - LIGHT_BLUE_STAINED_GLASS_PANE
+    - BLUE_STAINED_GLASS_PANE
+    - PURPLE_STAINED_GLASS_PANE
+    - MAGENTA_STAINED_GLASS_PANE
+  border-material: BLACK_STAINED_GLASS_PANE
+  intensity-phases:
+    early: 0.3 # 30% of animation
+    mid: 0.7   # 70% of animation
+    final-ticks: 10 # Last 10 ticks show result color
+    result-probability: 0.7 # 70% chance to show result color in final phase
+  sound-effects:
+    start: BLOCK_BEACON_ACTIVATE
+    tick-interval: 10 # Play sound every 10 ticks
+    tick-sound: UI_BUTTON_CLICK
+    tick-volume: 0.5
+    finish-delay-ticks: 40 # 2 seconds
+
+# Sound settings
+sounds:
+  roll-start: "BLOCK_BEACON_ACTIVATE"
+  roll-end-common: "ENTITY_EXPERIENCE_ORB_PICKUP"
+  roll-end-uncommon: "ENTITY_PLAYER_LEVELUP"
+  roll-end-rare: "BLOCK_BEACON_POWER_SELECT"
+  roll-end-epic: "ENTITY_ENDER_DRAGON_GROWL"
+  roll-end-legendary: "UI_TOAST_CHALLENGE_COMPLETE"
+  roll-end-ultimate: "ENTITY_WITHER_SPAWN"
+  
+  # Category sound mapping
+  category-sounds:
+    verde: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    azul-clarito: "ENTITY_PLAYER_LEVELUP"
+    azul-oscuro: "BLOCK_BEACON_POWER_SELECT"
+    roja: "ENTITY_ENDER_DRAGON_GROWL"
+    morada: "UI_TOAST_CHALLENGE_COMPLETE"
+    naranja: "ENTITY_WITHER_SPAWN"
+  
+# Messages
+messages:
+  reload-success: "&aConfiguration reloaded successfully!"
+  no-permission: "&cYou don't have permission to use this command!"
+  not-edtool: "&cYou must be holding an EdTool to use this!"
+  insufficient-rolls: "&cYou don't have enough rolls!"
+  perk-applied: "&aYou got a &f{perk_name} &aLVL {level}!"

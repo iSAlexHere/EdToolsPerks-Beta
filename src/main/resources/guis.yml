@@ -1,0 +1,171 @@
+# GUI Configuration for EdToolsPerks
+
+main-gui:
+  title: "&8Tool Perks Menu"
+  size: 54
+  items:
+    # Gray glass border (excluding slots 4, 46, 48, 50 for pity counter and buy buttons)
+    border:
+      material: GRAY_STAINED_GLASS_PANE
+      name: "&f"
+      slots: "0,1,2,3,5,6,7,8,9,17,18,26,27,35,36,44,45,46,48,50,52,53"
+    
+    # EdTool display slot (center - slot 22)
+    tool-display:
+      material: "{tool_material}" # Dynamically set based on the tool
+      name: "{tool_name}"
+      lore:
+        - "&7Current Tool:"
+        - "{tool_lore}"
+        - "&7"
+        - "&7Click to view tool info"
+      slots: "22"
+      actions:
+        click:
+          - "none" # No action, just display
+    
+    # Roll button (2 slots right - slot 24)
+    roll-button:
+      material: "texture-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzdiMTg3ZTM4YjQwN2ZlYWJhZjE5MDg3OWQ5OGE2N2Y0YzcwNTJmMzIwMWY3MmU0NDU3MWY1MzdlYTg5ZDRjNyJ9fX0="
+      name: "&e&lRoll Perk"
+      lore:
+        - "&7Click to roll for a random perk!"
+        - "&7"
+        - "&eRolls: &f{player_rolls}"
+        - "&7"
+        - "&aLeft Click: &fRoll once"
+        - "&aRight Click: &fRoll 10 times"
+      slots: "24"
+      actions:
+        left-click:
+          - "roll:1"
+        right-click:
+          - "roll:10"
+    
+    # Perks list button (2 slots left - slot 20)
+    perks-list:
+      material: ENCHANTED_BOOK
+      name: "&d&lPerks List"
+      lore:
+        - "&7View all available perks"
+        - "&7and their information"
+        - "&7"
+        - "&eClick to open!"
+      slots: "20"
+      actions:
+        click:
+          - "open-gui:perks-list"
+    
+    # Pity counter (moved to top - slot 4)
+    pity-counter:
+      material: NETHER_STAR
+      name: "&6&lPity Counter"
+      lore:
+        - "&7Total Rolls: &f{total_rolls}"
+        - "&7Next guaranteed purple at: &d500"
+        - "&7"
+        - "&7Progress: &f{total_rolls}&7/&d500"
+        - "{pity_bar}"
+      slots: "4"
+      actions:
+        click:
+          - "none"
+    
+    # Buy roll buttons (moved to bottom - slots 47, 49, 51)
+    buy-roll-1:
+      material: GOLD_INGOT
+      name: "&e&l1 Roll"
+      lore:
+        - "&7Cost: &a1000 farm-coins"
+        - "&7"
+        - "&eClick to buy!"
+      slots: "47"
+      actions:
+        click:
+          - "buy-rolls:1:1000"
+    
+    buy-roll-10:
+      material: GOLD_BLOCK
+      name: "&e&l10 Rolls"
+      lore:
+        - "&7Cost: &a9000 farm-coins"
+        - "&7Save: &c1000 farm-coins"
+        - "&7"
+        - "&eClick to buy!"
+      slots: "49"
+      actions:
+        click:
+          - "buy-rolls:10:9000"
+    
+    buy-roll-50:
+      material: DIAMOND
+      name: "&e&l50 Rolls"
+      lore:
+        - "&7Cost: &a40000 farm-coins"
+        - "&7Save: &c10000 farm-coins"
+        - "&7"
+        - "&eClick to buy!"
+      slots: "51"
+      actions:
+        click:
+          - "buy-rolls:50:40000"
+
+perks-list-gui:
+  title: "&8Available Perks"
+  size: 54
+  settings:
+    category-order: ["verde", "azul-clarito", "azul-oscuro", "roja", "morada", "naranja"]
+    perk-slots: "10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34,37,38,39,40,41,42,43"
+  items:
+    # Gray glass border
+    border:
+      material: GRAY_STAINED_GLASS_PANE
+      name: "&f"
+      slots: "0,1,2,3,4,5,6,7,8,9,17,18,26,27,35,36,44,46,47,48,49,50,51,52,53"
+    
+    # Back button
+    back-button:
+      material: ARROW
+      name: "&c&lBack"
+      lore:
+        - "&7Return to main menu"
+      slots: "45"
+      actions:
+        left-click:
+          - "open-gui:main"
+        right-click:
+          - "open-gui:main"
+
+# Animation GUI (used during roll animation)
+animation-gui:
+  title: "&8Rolling..."
+  size: 54
+  items:
+    # Border with animated glass panes
+    animated-border:
+      materials: # Will cycle through these
+        - WHITE_STAINED_GLASS_PANE
+        - LIGHT_GRAY_STAINED_GLASS_PANE
+        - GRAY_STAINED_GLASS_PANE
+        - BLACK_STAINED_GLASS_PANE
+      name: "&f"
+      slots: "0,1,2,3,4,5,6,7,8,9,17,18,26,27,35,36,44,45,46,47,48,49,50,51,52,53"
+    
+    # Tool display remains in center
+    tool-display:
+      material: "{tool_material}"
+      name: "{tool_name}"
+      lore:
+        - "&7Rolling for perk..."
+      slots: "22"
+    
+    # Animated crystal slots around the tool
+    crystal-animation:
+      materials: # Will cycle through these with random colors
+        - LIGHT_BLUE_STAINED_GLASS_PANE
+        - CYAN_STAINED_GLASS_PANE
+        - BLUE_STAINED_GLASS_PANE
+        - PURPLE_STAINED_GLASS_PANE
+        - MAGENTA_STAINED_GLASS_PANE
+      name: "&f"
+      slots: "12,13,14,21,23,30,31,32" # Surrounding the tool

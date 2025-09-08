@@ -1,0 +1,26 @@
+name: EdToolsPerks
+version: '${project.version}'
+main: com.edtools.edtoolsperks.EdToolsPerks
+api-version: '1.21'
+authors: [YourName]
+description: Plugin que se integra con EdTools para añadir perks permanentes a las herramientas
+
+depend:
+  - EdTools
+  - PlaceholderAPI
+
+softdepend: []
+
+commands:
+  edtoolsperks:
+    description: Comando principal del plugin
+    usage: /<command> [reload|help]
+    aliases: [etp, perks]
+    
+permissions:
+  edtoolsperks.admin:
+    description: Acceso a comandos de administrador
+    default: op
+  edtoolsperks.use:
+    description: Usar las funciones básicas del plugin
+    default: true

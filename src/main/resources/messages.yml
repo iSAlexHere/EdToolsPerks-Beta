@@ -1,0 +1,93 @@
+# Messages Configuration for EdToolsPerks
+
+# General messages
+general:
+  prefix: "&8[&eEdToolsPerks&8] "
+  reload-success: "&aConfiguration reloaded successfully!"
+  no-permission: "&cYou don't have permission to use this command!"
+  invalid-command: "&cInvalid command! Use /edtoolsperks help for help."
+  player-only: "&cThis command can only be executed by a player!"
+
+# Plugin lifecycle messages
+plugin:
+  enabled: "&a¡EdToolsPerks habilitado correctamente!"
+  disabled: "&cEdToolsPerks deshabilitado."
+  dependencies-missing: "Faltan dependencias requeridas. Deshabilitando plugin..."
+  edtools-missing: "EdTools no está instalado!"
+  placeholderapi-missing: "PlaceholderAPI no está instalado!"
+  
+# Tool validation messages
+tool:
+  not-edtool: "&cYou must be holding an EdTool to use this!"
+  invalid-tool: "&cThis tool is not supported by perks!"
+  no-tool: "&cYou must be holding a tool!"
+
+# Roll system messages
+roll:
+  insufficient-rolls: "&cYou don't have enough rolls! You need {required} but only have {current}."
+  insufficient-money: "&cYou don't have enough farm-coins! You need {required} but only have {current}."
+  perk-applied: "&aYou got a {category_color}{perk_name} &aLVL {level}!"
+  guaranteed-perk: "&d&lGUARANTEED! &aYou got a {category_color}{perk_name} &aLVL {level}!"
+  rolls-purchased: "&aYou purchased {amount} rolls for {cost} farm-coins!"
+  
+# Perk messages
+perk:
+  already-has-perk: "&cThis tool already has a perk! Remove it first."
+  perk-upgraded: "&aYour {perk_name} perk has been upgraded to level {level}!"
+  perk-removed: "&cPerk {perk_name} has been removed from your tool."
+  no-perk: "&cThis tool doesn't have any perks."
+  
+# Animation messages
+animation:
+  rolling-start: "&eRolling for perk..."
+  rolling-end: "&aRoll complete!"
+  
+# GUI messages
+gui:
+  main-title: "&8Tool Perks Menu"
+  perks-list-title: "&8Available Perks"
+  
+# Error messages
+error:
+  database-error: "&cDatabase error occurred. Please contact an administrator."
+  config-error: "&cConfiguration error. Please check the console."
+  unknown-error: "&cAn unknown error occurred. Please try again."
+  
+# Admin messages
+admin:
+  player-not-found: "&cPlayer not found!"
+  gave-rolls: "&aGave {amount} rolls to {player}."
+  reset-pity: "&aPity counter reset for {player}."
+  
+# Help messages
+help:
+  header: "&8&m----------&r &eEdToolsPerks Help &8&m----------"
+  commands:
+    - "&e/edtoolsperks reload &8- &7Reload configurations"
+    - "&e/edtoolsperks help &8- &7Show this help menu"
+  admin-commands:
+    - "&c&lAdmin Commands:"
+    - "&c/edtoolsperks give <player> <amount> &8- &7Give rolls to player"
+    - "&c/edtoolsperks reset <player> &8- &7Reset pity counter"
+  footer: "&8&m------------------------------------------"
+
+# Category display names and colors
+categories:
+  verde:
+    name: "Common"
+    color: "&a"
+  azul-clarito:
+    name: "Uncommon"  
+    color: "&b"
+  azul-oscuro:
+    name: "Rare"
+    color: "&9"
+  roja:
+    name: "Epic"
+    color: "&c"
+  morada:
+    name: "Legendary"
+    color: "&5"
+  naranja:
+    name: "Ultimate"
+    color: "&6"

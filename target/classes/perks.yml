@@ -1,0 +1,523 @@
+# EdToolsPerks - Perks Configuration
+# Based on the specifications provided
+
+perks:
+  # GREEN CATEGORY (Common Perks)
+  coin-perk:
+    category: "verde"
+    display-name: "Coin Perk"
+    description: "This Hoe Perk will provide your Hoe with an additional Coin Boost."
+    tool: "hoe"
+    chance: 12.5
+    levels:
+      1:
+        boost-type: "coin"
+        boost-amount: 10
+      2:
+        boost-type: "coin"
+        boost-amount: 20
+      3:
+        boost-type: "coin"
+        boost-amount: 30
+      4:
+        boost-type: "coin"
+        boost-amount: 40
+      5:
+        boost-type: "coin"
+        boost-amount: 50
+
+  orb-perk:
+    category: "verde"
+    display-name: "Orb Perk"
+    description: "This Hoe Perk will provide your Hoe with an additional Orb Boost."
+    tool: "hoe"
+    chance: 12.5
+    material: "ENDER_PEARL"
+    levels:
+      1:
+        boost-type: "orb"
+        boost-amount: 10
+      2:
+        boost-type: "orb"
+        boost-amount: 20
+      3:
+        boost-type: "orb"
+        boost-amount: 30
+      4:
+        boost-type: "orb"
+        boost-amount: 40
+      5:
+        boost-type: "orb"
+        boost-amount: 50
+
+  money-perk:
+    category: "verde"
+    display-name: "Money Perk"
+    description: "This Hoe Perk will provide your Hoe with an additional Money Boost."
+    tool: "hoe"
+    chance: 12.5
+    material: "GOLD_INGOT"
+    levels:
+      1:
+        boost-type: "money"
+        boost-amount: 10
+      2:
+        boost-type: "money"
+        boost-amount: 20
+      3:
+        boost-type: "money"
+        boost-amount: 30
+      4:
+        boost-type: "money"
+        boost-amount: 40
+      5:
+        boost-type: "money"
+        boost-amount: 50
+
+  pass-perk:
+    category: "verde"
+    display-name: "Pass Perk"
+    description: "This Hoe Perk will provide your Hoe with an additional Pass Boost."
+    tool: "hoe"
+    chance: 12.5
+    levels:
+      1:
+        boost-type: "pass"
+        boost-amount: 5
+      2:
+        boost-type: "pass"
+        boost-amount: 10
+      3:
+        boost-type: "pass"
+        boost-amount: 15
+      4:
+        boost-type: "pass"
+        boost-amount: 20
+      5:
+        boost-type: "pass"
+        boost-amount: 25
+
+  # LIGHT BLUE CATEGORY (Uncommon Perks)
+  level-perk:
+    category: "azul-clarito"
+    display-name: "Level Perk"
+    description: "This Hoe Perk will provide your Hoe with an additional Level Boost."
+    tool: "hoe"
+    chance: 12.5
+    levels:
+      1:
+        boost-type: "level"
+        boost-amount: 5
+      2:
+        boost-type: "level"
+        boost-amount: 10
+      3:
+        boost-type: "level"
+        boost-amount: 15
+      4:
+        boost-type: "level"
+        boost-amount: 20
+      5:
+        boost-type: "level"
+        boost-amount: 25
+
+  golden-perk:
+    category: "azul-clarito"
+    display-name: "Golden Perk"
+    description: "This Hoe Perk will provide your Hoe with an additional Coin Boost."
+    tool: "hoe"
+    chance: 5.0
+    levels:
+      1:
+        boost-type: "coin"
+        boost-amount: 20
+      2:
+        boost-type: "coin"
+        boost-amount: 40
+      3:
+        boost-type: "coin"
+        boost-amount: 60
+      4:
+        boost-type: "coin"
+        boost-amount: 80
+      5:
+        boost-type: "coin"
+        boost-amount: 100
+
+  ender-perk:
+    category: "azul-clarito"
+    display-name: "Ender Perk"
+    description: "This Hoe Perk will provide your Hoe with an additional Orb Boost."
+    tool: "hoe"
+    chance: 5.0
+    levels:
+      1:
+        boost-type: "orb"
+        boost-amount: 20
+      2:
+        boost-type: "orb"
+        boost-amount: 40
+      3:
+        boost-type: "orb"
+        boost-amount: 60
+      4:
+        boost-type: "orb"
+        boost-amount: 80
+      5:
+        boost-type: "orb"
+        boost-amount: 100
+
+  goldrush-perk:
+    category: "azul-clarito"
+    display-name: "Goldrush Perk"
+    description: "This Hoe Perk will provide your Hoe with an additional Money Boost."
+    tool: "hoe"
+    chance: 5.0
+    levels:
+      1:
+        boost-type: "money"
+        boost-amount: 20
+      2:
+        boost-type: "money"
+        boost-amount: 40
+      3:
+        boost-type: "money"
+        boost-amount: 60
+      4:
+        boost-type: "money"
+        boost-amount: 80
+      5:
+        boost-type: "money"
+        boost-amount: 100
+
+  enchanter-perk:
+    category: "azul-clarito"
+    display-name: "Enchanter Perk"
+    description: "This Hoe Perk will provide your Hoe with an additional Pass Boost."
+    tool: "hoe"
+    chance: 5.0
+    levels:
+      1:
+        boost-type: "pass"
+        boost-amount: 10
+      2:
+        boost-type: "pass"
+        boost-amount: 20
+      3:
+        boost-type: "pass"
+        boost-amount: 30
+      4:
+        boost-type: "pass"
+        boost-amount: 40
+      5:
+        boost-type: "pass"
+        boost-amount: 50
+
+  # DARK BLUE CATEGORY (Rare Perks)
+  momentum-perk:
+    category: "azul-oscuro"
+    display-name: "Momentum Perk"
+    description: "This Hoe Perk will provide your Hoe with an additional Level Boost."
+    tool: "hoe"
+    chance: 5.0
+    levels:
+      1:
+        boost-type: "level"
+        boost-amount: 10
+      2:
+        boost-type: "level"
+        boost-amount: 20
+      3:
+        boost-type: "level"
+        boost-amount: 30
+      4:
+        boost-type: "level"
+        boost-amount: 40
+      5:
+        boost-type: "level"
+        boost-amount: 50
+
+  printer-perk:
+    category: "azul-oscuro"
+    display-name: "Printer Perk"
+    description: "This Hoe Perk will provide your Hoe with an additional Money Boost."
+    tool: "hoe"
+    chance: 2.5
+    levels:
+      1:
+        boost-type: "money"
+        boost-amount: 30
+      2:
+        boost-type: "money"
+        boost-amount: 60
+      3:
+        boost-type: "money"
+        boost-amount: 90
+      4:
+        boost-type: "money"
+        boost-amount: 120
+      5:
+        boost-type: "money"
+        boost-amount: 150
+
+  wizard-perk:
+    category: "azul-oscuro"
+    display-name: "Wizard Perk"
+    description: "This Hoe Perk will provide your Hoe with an additional Enchant Boost."
+    tool: "hoe"
+    chance: 2.5
+    levels:
+      1:
+        boost-type: "enchant"
+        boost-amount: 7.5
+      2:
+        boost-type: "enchant"
+        boost-amount: 15
+      3:
+        boost-type: "enchant"
+        boost-amount: 22.5
+      4:
+        boost-type: "enchant"
+        boost-amount: 30
+      5:
+        boost-type: "enchant"
+        boost-amount: 37.5
+
+  # RED CATEGORY (Epic Perks)
+  banker-perk:
+    category: "roja"
+    display-name: "Banker Perk"
+    description: "This Hoe Perk will provide your Hoe with an additional Coin/Orb Boost."
+    tool: "hoe"
+    chance: 1.0
+    levels:
+      1:
+        boost-type: "coin,orb"
+        boost-amount: "40,40"
+      2:
+        boost-type: "coin,orb"
+        boost-amount: "80,80"
+      3:
+        boost-type: "coin,orb"
+        boost-amount: "120,120"
+      4:
+        boost-type: "coin,orb"
+        boost-amount: "160,160"
+      5:
+        boost-type: "coin,orb"
+        boost-amount: "200,200"
+
+  magnet-perk:
+    category: "roja"
+    display-name: "Magnet Perk"
+    description: "This Hoe Perk will provide your Hoe with an additional Enchant/Level Boost."
+    tool: "hoe"
+    chance: 1.0
+    levels:
+      1:
+        boost-type: "enchant,level"
+        boost-amount: "25,10"
+      2:
+        boost-type: "enchant,level"
+        boost-amount: "30,20"
+      3:
+        boost-type: "enchant,level"
+        boost-amount: "40,30"
+      4:
+        boost-type: "enchant,level"
+        boost-amount: "50,40"
+      5:
+        boost-type: "enchant,level"
+        boost-amount: "75,50"
+
+  demon-perk:
+    category: "roja"
+    display-name: "Demon Perk"
+    description: "This Hoe Perk will provide your Hoe with an additional Pass/Value Boost."
+    tool: "hoe"
+    chance: 1.0
+    levels:
+      1:
+        boost-type: "pass,crops"
+        boost-amount: "5,20"
+      2:
+        boost-type: "pass,crops"
+        boost-amount: "10,40"
+      3:
+        boost-type: "pass,crops"
+        boost-amount: "15,60"
+      4:
+        boost-type: "pass,crops"
+        boost-amount: "20,80"
+      5:
+        boost-type: "pass,crops"
+        boost-amount: "25,100"
+
+  mermaid-perk:
+    category: "roja"
+    display-name: "Mermaid Perk"
+    description: "This Hoe Perk will provide your Hoe with an additional Money/Orb Boost."
+    tool: "hoe"
+    chance: 1.0
+    levels:
+      1:
+        boost-type: "money,orb"
+        boost-amount: "20,20"
+      2:
+        boost-type: "money,orb"
+        boost-amount: "40,40"
+      3:
+        boost-type: "money,orb"
+        boost-amount: "60,60"
+      4:
+        boost-type: "money,orb"
+        boost-amount: "80,80"
+      5:
+        boost-type: "money,orb"
+        boost-amount: "100,100"
+
+  # PURPLE CATEGORY (Legendary Perks)
+  fortune-perk:
+    category: "morada"
+    display-name: "Fortune Perk"
+    description: "This Hoe Perk will provide your Hoe with an additional Coin/Orb/Money Boost."
+    tool: "hoe"
+    chance: 0.25
+    material: "DIAMOND"
+    levels:
+      1:
+        boost-type: "coin,orb,money"
+        boost-amount: "75,75,75"
+      2:
+        boost-type: "coin,orb,money"
+        boost-amount: "150,150,150"
+      3:
+        boost-type: "coin,orb,money"
+        boost-amount: "225,225,225"
+      4:
+        boost-type: "coin,orb,money"
+        boost-amount: "300,300,300"
+      5:
+        boost-type: "coin,orb,money"
+        boost-amount: "375,375,375"
+
+  power-perk:
+    category: "morada"
+    display-name: "Power Perk"
+    description: "This Hoe Perk will provide your Hoe with an additional Enchant/Money/Pass Boost."
+    tool: "hoe"
+    chance: 0.25
+    levels:
+      1:
+        boost-type: "enchant,money,pass"
+        boost-amount: "20,20,10"
+      2:
+        boost-type: "enchant,money,pass"
+        boost-amount: "40,40,20"
+      3:
+        boost-type: "enchant,money,pass"
+        boost-amount: "60,60,30"
+      4:
+        boost-type: "enchant,money,pass"
+        boost-amount: "80,80,40"
+      5:
+        boost-type: "enchant,money,pass"
+        boost-amount: "100,100,50"
+
+  godly-perk:
+    category: "morada"
+    display-name: "Godly Perk"
+    description: "This Hoe Perk will provide your Hoe with an additional Enchant/Pass/Level Boost."
+    tool: "hoe"
+    chance: 0.25
+    material: "NETHER_STAR"
+    levels:
+      1:
+        boost-type: "enchant,pass,level"
+        boost-amount: "25,10,10"
+      2:
+        boost-type: "enchant,pass,level"
+        boost-amount: "50,20,20"
+      3:
+        boost-type: "enchant,pass,level"
+        boost-amount: "75,30,30"
+      4:
+        boost-type: "enchant,pass,level"
+        boost-amount: "100,40,40"
+      5:
+        boost-type: "enchant,pass,level"
+        boost-amount: "125,50,50"
+
+  master-perk:
+    category: "morada"
+    display-name: "Master Perk"
+    description: "This Hoe Perk will provide your Hoe with an additional Enchant/Crops/Level Boost."
+    tool: "hoe"
+    chance: 0.25
+    levels:
+      1:
+        boost-type: "enchant,crops,level"
+        boost-amount: "30,20,20"
+      2:
+        boost-type: "enchant,crops,level"
+        boost-amount: "60,40,40"
+      3:
+        boost-type: "enchant,crops,level"
+        boost-amount: "90,60,60"
+      4:
+        boost-type: "enchant,crops,level"
+        boost-amount: "120,80,80"
+      5:
+        boost-type: "enchant,crops,level"
+        boost-amount: "150,100,75"
+
+  # ORANGE CATEGORY (Ultimate Perk)
+  universal-perk:
+    category: "naranja"
+    display-name: "Universal Perk"
+    description: "This Hoe Perk will provide your Hoe with an additional Money/Enchant/Level Crops/Coin/Orb and Pass Boost."
+    tool: "hoe"
+    chance: 0.1
+    levels:
+      1:
+        boost-type: "money,enchant,level,crops,coin,orb,pass"
+        boost-amount: "50,30,20,20,50,50,10"
+      2:
+        boost-type: "money,enchant,level,crops,coin,orb,pass"
+        boost-amount: "100,60,40,40,100,100,20"
+      3:
+        boost-type: "money,enchant,level,crops,coin,orb,pass"
+        boost-amount: "150,90,60,60,150,150,30"
+      4:
+        boost-type: "money,enchant,level,crops,coin,orb,pass"
+        boost-amount: "200,120,80,80,200,200,40"
+      5:
+        boost-type: "money,enchant,level,crops,coin,orb,pass"
+        boost-amount: "250,150,100,100,250,250,50"
+
+# Category configurations
+categories:
+  verde:
+    display-name: "&aCommon"
+    color: "&a"
+    glass-color: LIME_STAINED_GLASS_PANE
+  azul-clarito:
+    display-name: "&bUncommon"
+    color: "&b"
+    glass-color: LIGHT_BLUE_STAINED_GLASS_PANE
+  azul-oscuro:
+    display-name: "&9Rare"
+    color: "&9"
+    glass-color: BLUE_STAINED_GLASS_PANE
+  roja:
+    display-name: "&cEpic"
+    color: "&c"
+    glass-color: RED_STAINED_GLASS_PANE
+  morada:
+    display-name: "&5Legendary"
+    color: "&5"
+    glass-color: PURPLE_STAINED_GLASS_PANE
+  naranja:
+    display-name: "&6Ultimate"
+    color: "&6"
+    glass-color: ORANGE_STAINED_GLASS_PANE
